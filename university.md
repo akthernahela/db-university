@@ -16,6 +16,9 @@
 ## Tabella 
 
 - DIPARTIMENTO
+  - id_dipartimento
+  - nome
+  - indirizzo
 - CORSO_DI_LAUREA
 - STUDENTE
 - CORSO
