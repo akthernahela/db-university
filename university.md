@@ -25,6 +25,11 @@
   - nome
   - durata_anni
 - STUDENTE
+  - matricola
+  - id_laurea
+  - nome
+  - cognome
+  - data_nascita
 - CORSO
 - INSEGNANTE
 - APPELLO_ESAME
