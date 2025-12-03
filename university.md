@@ -31,6 +31,11 @@
   - cognome
   - data_nascita
 - CORSO
+  - id_corso
+  - id_laurea
+  - nome
+  - crediti
+  - anno_durata
 - INSEGNANTE
 - APPELLO_ESAME
 - ESAME_SOSTENUTO 
