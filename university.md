@@ -37,5 +37,9 @@
   - crediti
   - anno_durata
 - INSEGNANTE
+  - id_insegnante
+  - id_corso
+  - nome
+  - cognome
 - APPELLO_ESAME
 - ESAME_SOSTENUTO 
