@@ -20,6 +20,10 @@
   - nome
   - indirizzo
 - CORSO_DI_LAUREA
+  - id_laurea
+  - id_dipartimento
+  - nome
+  - durata_anni
 - STUDENTE
 - CORSO
 - INSEGNANTE
