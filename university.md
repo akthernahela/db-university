@@ -42,4 +42,8 @@
   - nome
   - cognome
 - APPELLO_ESAME
+  - id_appello
+  - id_corso	
+  - data
+  - aula
 - ESAME_SOSTENUTO 
