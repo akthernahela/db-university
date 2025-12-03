@@ -25,10 +25,9 @@
   - nome
   - durata_anni
 - STUDENTE
-  - matricola
+  - id_studente
   - id_laurea
-  - nome
-  - cognome
+  - nome_cognome
   - data_nascita
 - CORSO
   - id_corso
@@ -47,7 +46,8 @@
   - data
   - aula
 - ESAME_SOSTENUTO 
-  - matricola
+  - id_esame
+  - id_studente
   - voto
   - id_appello
   - data
