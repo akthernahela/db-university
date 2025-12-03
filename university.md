@@ -47,3 +47,7 @@
   - data
   - aula
 - ESAME_SOSTENUTO 
+  - matricola
+  - voto
+  - id_appello
+  - data
