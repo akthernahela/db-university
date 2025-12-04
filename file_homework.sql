@@ -27,8 +27,7 @@ USE db_universityadmin;
 #GROUP 
 
 #1. Contare quanti iscritti ci sono stati ogni anno
-SELECT YEAR(enrolment_date) AS `enrolment_year`, COUNT(*) FROM `students` GROUP BY YEAR(enrolment_date) ORDER BY `enrolment_year`;
+#SELECT YEAR(enrolment_date) AS `enrolment_year`, COUNT(*) FROM `students` GROUP BY YEAR(enrolment_date) ORDER BY `enrolment_year`;
 
-
-
-
+#2. Contare gli insegnanti che hanno l'ufficio nello stesso edificio
+SELECT `office_address`, COUNT(*) AS `teacher` FROM `teachers` GROUP BY `office_address`;
