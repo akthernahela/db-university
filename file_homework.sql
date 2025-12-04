@@ -32,6 +32,9 @@ USE db_universityadmin;
 #2. Contare gli insegnanti che hanno l^ufficio nello stesso edificio
 #SELECT `office_address`, COUNT(*) AS `teacher` FROM `teachers` GROUP BY `office_address`;
 
-#3. Calcolare la media dei voti di ogni appello d'esame
-SELECT `exam_id`, AVG(vote) AS `avrg_marks` FROM `exam_student` GROUP BY `exam_id`;
+#3. Calcolare la media dei voti di ogni appello d^esame
+#SELECT `exam_id`, AVG(vote) AS `avrg_marks` FROM `exam_student` GROUP BY `exam_id`;
+
+#4. Contare quanti corsi di laurea ci sono per ogni dipartimento
+SELECT `department_id`, COUNT(*) AS `corsi_laurea` FROM `degrees` GROUP BY `department_id`;
 
