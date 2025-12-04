@@ -22,7 +22,12 @@ USE db_universityadmin;
 #SELECT * FROM `departments`;
 
 #8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
-SELECT * FROM `teachers` WHERE `phone` IS NULL
+#SELECT * FROM `teachers` WHERE `phone` IS NULL;
+
+#GROUP 
+
+#1. Contare quanti iscritti ci sono stati ogni anno
+SELECT YEAR(enrolment_date) AS `enrolment_year`, COUNT(*) FROM `students` GROUP BY YEAR(enrolment_date) ORDER BY `enrolment_year`;
 
 
 
