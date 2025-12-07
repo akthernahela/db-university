@@ -59,7 +59,7 @@ WHERE degrees.name = 'Corso di Laurea in Economia';
 
 #2. Selezionare tutti i Corsi di Laurea Magistrale del Dipartimento di Neuroscienze
 
-SELECT
+/*SELECT
     degrees.id,
     degrees.name,
     degrees.level,
@@ -72,3 +72,20 @@ INNER JOIN departments
     ON degrees.department_id = departments.id
 WHERE degrees.level = 'magistrale'
   AND departments.name = 'Dipartimento di Neuroscienze';
+*/
+
+#3. Selezionare tutti i corsi in cui insegna Fulvio Amato (id=44)
+
+SELECT
+    courses.id,
+    courses.name,
+    courses.description,
+    courses.period,
+    courses.year,
+    courses.cfu,
+    courses.website,
+    courses.degree_id
+FROM courses
+INNER JOIN course_teacher
+    ON courses.id = course_teacher.course_id
+WHERE course_teacher.teacher_id = 44;
