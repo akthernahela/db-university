@@ -1,5 +1,5 @@
 USE db_universityadmin;
-
+/*
 #1. Selezionare tutti gli studenti nati nel 1990 (160)
 #SELECT * FROM `students` WHERE YEAR(date_of_birth) = 1990;
 
@@ -37,6 +37,8 @@ USE db_universityadmin;
 
 #4. Contare quanti corsi di laurea ci sono per ogni dipartimento
 #SELECT `department_id`, COUNT(*) AS `corsi_laurea` FROM `degrees` GROUP BY `department_id`;
+
+*/
 
 #JOIN
 
@@ -93,7 +95,7 @@ WHERE course_teacher.teacher_id = 44;
 
 #4. Selezionare tutti gli studenti con i dati relativi al corso di laurea a cui sono iscritti e il relativo dipartimento, in ordine alfabetico per cognome e nome
 
-SELECT
+/*SELECT
     students.name AS student_name,
     students.surname AS student_surname,
     degrees.name AS degree_name,
@@ -106,3 +108,23 @@ INNER JOIN departments
 ORDER BY
     students.surname ASC,
     students.name ASC;
+*/
+
+#5. Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti
+
+SELECT
+    degrees.name AS degree_name,
+    courses.name AS course_name,
+    teachers.name AS teacher_name,
+    teachers.surname AS teacher_surname
+FROM degrees
+INNER JOIN courses
+    ON courses.degree_id = degrees.id
+INNER JOIN course_teacher
+    ON course_teacher.course_id = courses.id
+INNER JOIN teachers
+    ON teachers.id = course_teacher.teacher_id
+ORDER BY
+    degree_name,
+    course_name,
+    teacher_surname;
